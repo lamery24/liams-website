@@ -51,6 +51,12 @@ def page_not_found(e):
 @app.route("/elite-results/")
 def er():
   return render_template('elite-results.html')
+
+
+@app.route("/media/")
+def media():
+  return render_template('media.html')
+
   
 if __name__=="__main__":
   app.run(host='0.0.0.0',debug=True)
