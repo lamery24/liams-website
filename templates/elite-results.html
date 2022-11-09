@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TF Weekly</title>
+    <title>Elite Results</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+
     <style>
       h1{
         font-family:serif;
-        font-size:80px;
+        font-size:60px;
         font-weight: normal;
         color: rgb(0,0,200);
         text-align: center;
@@ -59,30 +61,28 @@
   </head>
 
   <body>
+    {% include 'nav.html' %}
     <div class="bg-dark p-2 text-white bg-opacity-90">
 
-    <h1>Track and Field Weekly</h1>
-    <img id= "banner" src = "https://liams-website.lamery24.repl.co/static/trackbanner2.jpg">
+    <h1>Elite Results</h1>
 
     
   <div class="container">
 
-    <h2>Weekly Rundown</h2>
+    <h2></h2>
       <p class="bodytext">Last week was an exciting week...Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras et arcu quis magna efficitur venenatis ac nec dui. In eget libero tristique, varius felis sit amet, gravida leo. Donec quis justo id lectus pellentesque volutpat. Nam id lacinia odio. Nullam viverra massa diam, a hendrerit mauris laoreet eu. Aenean sed tortor in quam dictum elementum. Nam vulputate risus sed mauris dignissim mollis.
   
   Ut malesuada accumsan ullamcorper. Duis vel semper enim. Nulla massa purus, volutpat in faucibus non, tempus ac diam. Phasellus et pretium tortor, in vehicula eros. Ut fringilla tristique leo a volutpat. Nunc vel elit leo. In hac habitasse platea dictumst. Proin sed lacus in elit lobortis elementum. Duis sem elit, pellentesque id diam ut, congue placerat sapien. Vestibulum non sollicitudin dolor.
   
-  Curabitur eget libero vel eros tincidunt sodales. Etiam vitae metus non diam dapibus semper. Curabitur pulvinar aliquam mi. Vivamus ac enim et sapien laoreet tristique at vitae turpis. Aliquam ut sem ut leo pellentesque mollis. Ut neque leo, laoreet at consequat in, bibendum et ante. Curabitur non tellus feugiat, lobortis mi nec, lacinia lectus. Sed mattis semper nulla, non placerat mauris mattis eget. Sed eu nisl euismod, suscipit dui quis, ultrices massa. Suspendisse consequat molestie neque, in euismod velit accumsan vitae.
-  
-  Aliquam lacus urna, feugiat sit amet viverra in, ultrices vitae ipsum. Praesent magna risus, pretium ut sem sed, ultrices suscipit mi. In mattis et dolor vitae pulvinar. In vitae tristique mi, vel sodales erat. Suspendisse scelerisque ante eu cursus iaculis. Donec sagittis condimentum lacus. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras luctus rhoncus lacus quis ullamcorper. Vivamus in lectus maximus, sodales nulla quis, imperdiet nibh. Suspendisse et enim leo. Maecenas quis urna quis est maximus varius sit amet nec turpis. Quisque neque erat, varius et turpis vel, ullamcorper viverra elit. Integer id metus ac magna suscipit finibus ac non ex. Curabitur lacus velit, tristique eget maximus sit amet, porttitor et enim.</p>
+  Curabitur eget libero vel eros tincidunt sodales. Etiam vitae metus non diam dapibus semper. Curabitur pulvinar aliquam mi. Vivamus ac enim et sapien laoreet tristique at vitae turpis. Aliquam ut sem ut leo pellentesque mollis. Ut neque leo, laoreet at consequat in, bibendum et ante. Curabitur non tellus feugiat, lobortis mi nec, lacinia lectus. Sed mattis semper nulla, non placerat mauris mattis eget. Sed eu nisl euismod, suscipit dui quis, ultrices massa. Suspendisse consequat molestie neque, in euismod velit accumsan vitae.</p>
     {% for dl in dl %}
       {% include 'diamond-league-sced.html'%}
     {% endfor %}
-    <div class="text-center">
-      <button type="button" class="btn btn-primary btn-lg">Contact Us</button>
-    </div>
-    <p class=copyright> Copyright 2022, LA<p>
+
+    {% include 'footer.html' %}
     </div>
     </div>
+
   </body>
+      
 </html>
