@@ -26,15 +26,16 @@
         font-family:serif;
         font-size:40px;
         font-weight: normal;
-        color: rgb(255,255,255);
+        color: rgb(0,0,0);
         text-align: center;
+        margin-top:30px;
       }
 
       h3{
         font-family:serif;
         font-size:24px;
         font-weight: normal;
-        color: rgb(255,255,255);
+        color: rgb(0,0,0);
         margin-top:30px;
       }
 
@@ -42,7 +43,7 @@
         font-family:serif;
         font-size:12px;
         font-weight:200 ;
-        color: rgb(255,255,255);
+        color: rgb(0,0,0);
         margin-top:-10px;
       }
       
@@ -53,9 +54,16 @@
       }
       .caption{
         font-family:sans-serif;
-        font-size:16px;
+        font-size:12px;
         font-weight: normal;
         margin: top 20px;
+        text-align: center; 
+      }
+      .links{
+        font-family:sans-serif;
+        font-size:22px;
+        font-weight: normal;
+        margin: top 50px;
         text-align: center; 
       }
       .copyright{
@@ -70,39 +78,30 @@
         margin:0 auto 0 auto;
       }
 
-      
     </style>
   </head>
 
   <body>
     {% include 'nav.html' %}
-    <div class="bg-dark p-2 text-white bg-opacity-90">
 
-    <h1>Elite Results</h1>
-
+  <p class="links"><a href="#2022"><u>2022</u></a> | <a href="#2023"><u>2023</u></a> </p>
     
-  <div class="container">
-    <h2>World Champs</h2>
-    <h2>Diamond League</h2>
-      {% for dl in dl %}
-      {% include 'diamond-league-sced.html'%}
-    {% endfor %}
-    <h2>Other Elite Results</h2>
-
-    <h2>College</h2>
+<h2><a id="2023">2023</h2></a>
+    
+<h2><a id="2022">2022</h2></a>
     
        <img id= "thumbnail" style="float:left"src = "https://liams-website.lamery24.repl.co/static/ncaa_logo.png">
-    <h3>NCAA Cross Country Championship Preview</h3>
+    <div class="border-bottom row">
+    <h3>NCAA Cross Country Championships</h3>
     <h4><i>November 13, 2022 by Liam Amery</i></h4>
       <p class="bodytext">Read our preview for the upcoming Men's NCAA Cross Country Championships on November 19, 2022</p>
     <a class="nav-link" href="/articles/xc_champs_2022/">
-      <p class="bodytext"><u>Read more...</u></p></a>
-    <a class="nav-link" href="/archive/">
-    <p class="caption"><u>Full Article Archive</u></p></a>
+      <p class="bodytext"><u>Read more...</u></p></a></div>
+
+
 
 
     {% include 'footer.html' %}
-    </div>
     </div>
 
   </body>

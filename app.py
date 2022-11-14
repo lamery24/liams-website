@@ -52,15 +52,21 @@ def page_not_found(e):
 def er():
   return render_template('elite-results.html')
 
+@app.route("/archive/")
+def col_archive():
+  return render_template('carchive.html')
+
+
+@app.route("/media/")
+def media():
+  return render_template('media.html')
+
 #ARTICLES
 @app.route("/articles/xc_champs_2022/")
 def ar_xc_22():
   return render_template('articles/xc_champs_2022.html')
 
 
-@app.route("/media/")
-def media():
-  return render_template('media.html')
 
   
 if __name__=="__main__":
