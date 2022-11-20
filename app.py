@@ -62,6 +62,10 @@ def media():
   return render_template('media.html')
 
 #ARTICLES
+@app.route("/articles/xc_champs_recap_22/")
+def ar_xc_22():
+  return render_template('articles/xc_champs_recap_22.html')
+
 @app.route("/articles/xc_champs_2022/")
 def ar_xc_22():
   return render_template('articles/xc_champs_2022.html')
