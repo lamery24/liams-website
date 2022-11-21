@@ -24,6 +24,12 @@
         margin-top: -200px;
         opacity: 10%;
       }
+
+      #art-thumbnail{
+        width: 200px;
+        margin: auto;    
+        display: block;  
+      }
       
       h2{
         font-family:serif;
@@ -40,6 +46,16 @@
         font-size:20px;
         font-weight: normal;
         color: rgb(255,255,255);
+        text-align:center;
+      }
+        
+      h4{
+        font-family:serif;
+        font-size:14px;
+        font-weight:200;
+        color: rgb(255,255,255);
+        margin-top:-10px;
+        text-align:center;
       }
       
       .bodytext{
@@ -82,6 +98,21 @@
   Curabitur eget libero vel eros tincidunt sodales. Etiam vitae metus non diam dapibus semper. Curabitur pulvinar aliquam mi. Vivamus ac enim et sapien laoreet tristique at vitae turpis. Aliquam ut sem ut leo pellentesque mollis. Ut neque leo, laoreet at consequat in, bibendum et ante. Curabitur non tellus feugiat, lobortis mi nec, lacinia lectus. Sed mattis semper nulla, non placerat mauris mattis eget. Sed eu nisl euismod, suscipit dui quis, ultrices massa. Suspendisse consequat molestie neque, in euismod velit accumsan vitae.
   
   Aliquam lacus urna, feugiat sit amet viverra in, ultrices vitae ipsum. Praesent magna risus, pretium ut sem sed, ultrices suscipit mi. In mattis et dolor vitae pulvinar. In vitae tristique mi, vel sodales erat. Suspendisse scelerisque ante eu cursus iaculis. Donec sagittis condimentum lacus. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras luctus rhoncus lacus quis ullamcorper. Vivamus in lectus maximus, sodales nulla quis, imperdiet nibh. Suspendisse et enim leo. Maecenas quis urna quis est maximus varius sit amet nec turpis. Quisque neque erat, varius et turpis vel, ullamcorper viverra elit. Integer id metus ac magna suscipit finibus ac non ex. Curabitur lacus velit, tristique eget maximus sit amet, porttitor et enim.</p>
+
+    <div class="row">
+    <div class="col-4" >
+      <div class="container-sm">
+      <img id= "art-thumbnail" src = "/static/ncaa_logo.png">
+   <a class="nav-link" href="/articles/xc_champs_recap_22/"><u><h3>NCAA Cross Country Championship Recap</h3></u></a>
+    <h4><i>November 20, 2022 by Liam Amery</i></h4>
+      <p class="bodytext">Read our recap of the thrilling Women's and Men's NCAA D1 Cross Country Championships on November 19, 2022</p></div></div>   
+    
+ <div class="col-4" >
+   <div class="container-sm">
+  <img id= "art-thumbnail" src = "/static/ncaa_logo.png">
+    <a class="nav-link" href="/articles/xc_champs_2022/"><u><h3>NCAA Cross Country Championships Preview</h3></u></a>
+    <h4><i>November 13, 2022 by Liam Amery</i></h4>
+      <p class="bodytext">Read our preview for the upcoming Men's NCAA Cross Country Championships on November 19, 2022</p></div></div></div>
 
     <h2>Upcoming Diamond League Meets</h2>
     {% for dl in dl %}

@@ -54,7 +54,7 @@ def er():
 
 @app.route("/archive/")
 def col_archive():
-  return render_template('carchive.html')
+  return render_template('archive.html')
 
 
 @app.route("/media/")
