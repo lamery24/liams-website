@@ -24,6 +24,11 @@
         object-position: 90% 0;
         margin-top: -200px;
       }
+        #article{
+        height: 500px;
+        object-fit: cover;
+        object-position: 90% 0;
+      }
 
       #art-thumbnail{
         width: 100px;
@@ -83,6 +88,12 @@
       bottom: 0px;
       right: 8px;
     }
+    .centered {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
       
     </style>
@@ -103,11 +114,12 @@
   Ut malesuada accumsan ullamcorper. Duis vel semper enim. Nulla massa purus, volutpat in faucibus non, tempus ac diam. Phasellus et pretium tortor, in vehicula eros. Ut fringilla tristique leo a volutpat. Nunc vel elit leo. In hac habitasse platea dictumst. Proin sed lacus in elit lobortis elementum. Duis sem elit, pellentesque id diam ut, congue placerat sapien. Vestibulum non sollicitudin dolor.
 </p>
 
-      <h1>College Corner</h1>
+      <h1 style= "margin-bottom:15px">College Corner</h1>
       <div class="row">
+        
       <div class="col-4" >
 <div class="row row-cols-1 row-cols-md-1 g-2">
-<div class="card text-center" style="width: 24rem;">
+<div class="card text-center">
   <img src="/static/ncaa_logo.png" id="art-thumbnail" alt="...">
   <div class="card-body">
     <h3 class="card-title" style="margin-bottom:20px;">NCAA Cross Country Championship Recap</h3>
@@ -118,7 +130,7 @@
 </div>
 
   
-<div class="card text-center" style="width: 24rem;">
+<div class="card text-center">
   <img src="/static/ncaa_logo.png" id="art-thumbnail" alt="...">
   <div class="card-body">
     <h3 class="card-title" style="margin-bottom:20px;">NCAA Cross Country Championships Preview</h3>
@@ -126,13 +138,22 @@
     <p class="card-text">Read our preview for the upcoming Men's NCAA Cross Country Championships on November 19, 2022.</p>
     <a href="/articles/xc_champs_2022/" class="btn btn-primary">Read More</a></div></div></div></div> 
 
-        <div class="col-4" >
-    <h2 style="margin-top:20px;font-weight:bolder;font-size:48px;">Upcoming Meets</h2>
-      <p class="bodytext">
-  Ut malesuada accumsan ullamcorper. Duis vel semper enim. Nulla massa purus, volutpat in faucibus non, tempus ac diam. Phasellus et pretium tortor, in vehicula eros. Ut fringilla tristique leo a volutpat. Nunc vel elit leo. In hac habitasse platea dictumst. Proin sed lacus in elit lobortis elementum. Duis sem elit, pellentesque id diam ut, congue placerat sapien. Vestibulum non sollicitudin dolor.
-</p></div></div>
 
 
+
+ <div class="col-8" >
+   <div class="container2" style= "margin-top:0px;padding: 0px; border: 3px solid black;">
+      <img id="article" src="/static/xc-champs.png"  alt="Cross Country Runners" style="width:100%;">
+      <div>
+        <h2 style="color: rgb(0,0,250); font-weight:bold;"><a class="nav-link" href="/articles/xc_champs_recap_22/">NAU Claims 6th Title in 7 Years!</a></h2>
+        <h3>Some representative placeholder content for the first slide.</h3>
+      </div>
+   </div>
+ </div>
+</div>
+
+
+      
   <!--Want to keep this in just for future reference 
     <h2>Upcoming Diamond League Meets</h2>
  
